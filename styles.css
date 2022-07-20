@@ -5,14 +5,18 @@ html {
 }
 
 body {
-    width: 100%;
-    padding: 0 2rem;
+    width: 1400px;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: #FBE551;
 }
 
 section {
-    padding: 2rem;
+    padding: 24px;
     border: 1px solid gray;
-    margin: 0 2rem;
+    margin: 0 auto;
+    width: 98%;
+    background-color: white;
 }
 
 h2 {
@@ -28,12 +32,16 @@ h3 {
 header {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     position: sticky;
+    align-items: center;
+    height: 60px;
     top: 0;
     z-index: 10;
-    width: 92.5%;
+    width: 1400px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0px 36px 36px 36px;
     background-color: lightgray;
 }
 
@@ -44,6 +52,7 @@ header h1 {
 nav {
     display: inline-flex;
     margin-left: auto;
+    margin-right: 24px;
 }
 
 nav ul {
@@ -65,24 +74,25 @@ nav li a {
 #colors {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-#colors {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
 #cool-blue,
+#easter-pastels,
 #orange-delight,
-#purple-majesty {
+#purple-majesty,
+#yellow-blast {
     width: 200px;
     text-align: center;
-    padding-right: 120px;
+    padding-right: 60px;
 }
 
 #cool-blue > div,
+#easter-pastels > div,
 #orange-delight > div,
-#purple-majesty > div {
+#purple-majesty > div,
+#yellow-blast > div {
     display: block;
     text-align: center;
     font-size: 1.1rem;
@@ -135,10 +145,40 @@ nav li a {
 .grassy-green {
     background-color: #9bc400;
 }
+.mint-green {
+    background-color: #8bf0ba;
+}
+.middle-blue {
+    background-color: #0e0fed;
+}
+.pale-blue {
+    background-color: #94f0f1;
+}
+.pretty-pink {
+    background-color: #f2b1d8;
+}
+.egg-yellow {
+    background-color: #ffdc6a;
+}
+.tangerine {
+    background-color: #f48200;
+}
+.deep-yellow {
+    background-color: #f6bb0a;
+}
+.sandstorm {
+    background-color: #f9d342;
+}
+.pale-yellow {
+    background-color: #fbe551;
+}
+.barely-yellow {
+    background-color: #fde88d;
+}
 
 /** Style footer **/
 footer {
-    width: 92.5%;      
+    width: 1400px;      
     bottom: 0;
     margin: 0 auto;
     background-color: rgb(22, 6, 71);
