@@ -1,0 +1,148 @@
+/** Basic styling **/
+html {
+    background-color: #ffffff;
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    padding: 0 2rem;
+}
+
+section {
+    padding: 2rem;
+    border: 1px solid gray;
+    margin: 0 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+/** Style header **/
+header {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 92.5%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: lightgray;
+}
+
+header h1 {
+    display: inline-flex;
+}
+
+nav {
+    display: inline-flex;
+    margin-left: auto;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+
+nav li {
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+/** Style color section **/
+#colors {
+    display: flex;
+    flex-direction: row;
+}
+
+#colors {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#cool-blue,
+#orange-delight,
+#purple-majesty {
+    width: 200px;
+    text-align: center;
+    padding-right: 120px;
+}
+
+#cool-blue > div,
+#orange-delight > div,
+#purple-majesty > div {
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform:uppercase;
+    padding: 1rem 3rem 5rem 3rem;
+    border: 1px solid lightgray;
+    margin-bottom: 1px;
+}
+
+/** Style colors **/
+.light-blue {
+    background-color: #6ba7c7;
+}
+.medium-blue {
+    background-color: #0F73A9;
+}
+.dark-blue {
+    background-color: #104E82;
+    color: white;
+}
+.slate-gray {
+    background-color: #D9D7D7;
+}
+.bright-orange {
+    background-color: #f43a09;
+}
+.burnt-orange {
+    background-color: #ffb766;
+}
+.blue-green {
+    background-color: #c2edda;
+}
+.live-green {
+    background-color: #68d388;
+}
+.forest-green {
+    background-color: #0f2114;
+    color: white;
+}
+.purple-mountains {
+    background-color: #8076a3;
+}
+.factory-purple {
+    background-color: #7c677f;
+}
+.misty-pink {
+    background-color: #f9c5bd;
+}
+.grassy-green {
+    background-color: #9bc400;
+}
+
+/** Style footer **/
+footer {
+    width: 92.5%;      
+    bottom: 0;
+    margin: 0 auto;
+    background-color: rgb(22, 6, 71);
+    text-align: left;
+    color: #ebd281; 
+    padding: 2rem;
+}
