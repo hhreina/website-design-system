@@ -1,6 +1,7 @@
 /** Basic styling **/
 html {
     background-color: #ffffff;
+    font-family: Lato, sans-serif;
     font-size: 16px;
 }
 
@@ -14,7 +15,7 @@ body {
 main {
     width: 1400px;
     margin: 0 auto;
-    padding: 60px 24px 24px 24px;
+    padding: 24px;
     background-color: #f48200b8;
 }
 section {
@@ -25,13 +26,29 @@ section {
     background-color: white;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: Raleway, sans-serif;
+}
+
 h2 {
     font-size: 2rem;
     text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 h3 {
     font-size: 1.3rem;
+}
+
+/** Adjust anchor links for header height **/
+a[name]::before,
+[id]::before {
+    content: '';
+    display: block;
+    visibility: hidden;
+    height: 128px;      /* this is the height of your header */
+    margin-top: -128px; /* this is the height of your header, negated */
 }
 
 /** Style header **/
@@ -41,7 +58,7 @@ header {
     flex-wrap: wrap;
     position: sticky;
     align-items: center;
-    height: 100px;
+    height: 64px;
     top: 0;
     z-index: 10;
     width: 1400px;
@@ -195,6 +212,7 @@ nav li a {
 
 #fonts > div {
     width: 45%;
+    margin-bottom: 24px;
     padding: 16px;
     border: 1px dotted gray;
 }
@@ -220,11 +238,200 @@ nav li a {
 }
 
 .open-sans {
-    font-family: "Open Sans";
+    font-family: "Open+Sans";
 }
 
 .merriweather {
     font-family: Merriweather;
+}
+
+/** Style text styles **/
+
+
+
+/** Style buttons **/
+
+#buttons-header {
+    padding: 16px;
+}
+
+#buttons > div {
+    padding: 24px;
+    border: 1px dotted gray;
+}
+
+.vibrabutton{
+    position: relative;
+    background-color: black;
+    border-radius: 4px;
+    font-family: Lato;
+    font-size: 16px;
+    color: white;
+    padding: 1rem 1em;
+    cursor:pointer;
+    user-select:none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
+  }
+  
+  .vibrabutton:hover {
+    transition-duration: 0.1s;
+    background-color: #3A3A3A;
+  }
+  
+  .vibrabutton:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4px;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px blue;
+  }
+  
+  .vibrabutton:active:after {
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    border-radius: 4px;
+    left: 0;
+    top:0;
+    opacity: 1;
+    transition: 0s;
+  }
+  
+  .vibrabutton:active {
+    top: 1px;
+  }
+
+
+/*
+    Auther: Abdelrhman Said
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+#social-buttons {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#social-buttons:focus,
+#social-buttons:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#social-buttons {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  place-items: center;
+  background: linear-gradient(315deg, #ffffff, #d7e1ec);
+}
+
+#social-buttons .wrapper {
+  display: inline-flex;
+  list-style: none;
+}
+
+#social-buttons .wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#social-buttons .wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#social-buttons .wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#social-buttons .wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+#social-buttons .wrapper .icon:hover span,
+#social-buttons .wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+#social-buttons .wrapper .facebook:hover,
+#social-buttons .wrapper .facebook:hover .tooltip,
+#social-buttons .wrapper .facebook:hover .tooltip::before {
+  background: #1877F2;
+  color: #ffffff;
+}
+
+#social-buttons .wrapper .twitter:hover,
+#social-buttons .wrapper .twitter:hover .tooltip,
+#social-buttons .wrapper .twitter:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+#social-buttons .wrapper .instagram:hover,
+#social-buttons .wrapper .instagram:hover .tooltip,
+#social-buttons .wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
+}
+
+#social-buttons .wrapper .github:hover,
+#social-buttons .wrapper .github:hover .tooltip,
+#social-buttons .wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+
+#social-buttons .wrapper .youtube:hover,
+#social-buttons .wrapper .youtube:hover .tooltip,
+#social-buttons .wrapper .youtube:hover .tooltip::before {
+  background: #CD201F;
+  color: #ffffff;
 }
 
 /** Style footer **/
