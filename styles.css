@@ -8,14 +8,20 @@ body {
     width: 1400px;
     margin: 0 auto;
     padding: 0px;
-    background-color: #FBE551;
+    
 }
 
+main {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 60px 24px 24px 24px;
+    background-color: #f48200b8;
+}
 section {
     padding: 24px;
     border: 1px solid gray;
     margin: 0 auto;
-    width: 98%;
+    width: 96%;
     background-color: white;
 }
 
@@ -35,14 +41,14 @@ header {
     flex-wrap: wrap;
     position: sticky;
     align-items: center;
-    height: 60px;
+    height: 100px;
     top: 0;
     z-index: 10;
     width: 1400px;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0px 36px 36px 36px;
-    background-color: lightgray;
+    padding: 0px 24px 36px 24px;
+    background-color: #7debc4;
 }
 
 header h1 {
@@ -85,7 +91,7 @@ nav li a {
 #yellow-blast {
     width: 200px;
     text-align: center;
-    padding-right: 60px;
+    padding-right: 24px;
 }
 
 #cool-blue > div,
@@ -98,7 +104,7 @@ nav li a {
     font-size: 1.1rem;
     font-weight: bold;
     text-transform:uppercase;
-    padding: 1rem 3rem 5rem 3rem;
+    padding: 1rem 3rem 4rem 3rem;
     border: 1px solid lightgray;
     margin-bottom: 1px;
 }
@@ -150,6 +156,7 @@ nav li a {
 }
 .middle-blue {
     background-color: #0e0fed;
+    color: white;
 }
 .pale-blue {
     background-color: #94f0f1;
@@ -176,6 +183,50 @@ nav li a {
     background-color: #fde88d;
 }
 
+/** Style fonts **/
+
+#fonts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+#fonts > div {
+    width: 45%;
+    padding: 16px;
+    border: 1px dotted gray;
+}
+
+#fonts p {
+    font-size: 1.5rem;
+}
+
+.lato {
+    font-family: Lato;
+}
+
+.raleway {
+    font-family: Raleway;
+}
+
+.italiana {
+    font-family: Italiana;
+}
+
+.cinzel {
+    font-family: Cinzel;
+}
+
+.open-sans {
+    font-family: "Open Sans";
+}
+
+.merriweather {
+    font-family: Merriweather;
+}
+
 /** Style footer **/
 footer {
     width: 1400px;      
@@ -184,5 +235,5 @@ footer {
     background-color: rgb(22, 6, 71);
     text-align: left;
     color: #ebd281; 
-    padding: 2rem;
+    padding: 24px;
 }
